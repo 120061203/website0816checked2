@@ -1,0 +1,98 @@
+.panel_group {}
+
+.panel_control {
+    position: absolute;
+    opacity: 0;
+    /*使radio點點消失*/
+}
+
+.tab_group {}
+
+.tab_group label {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #ccc;
+    bottom: -1px;
+    position: relative;
+}
+
+.content_group {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.tab_group .active {}
+
+.content {
+    display: none;
+}
+
+.content1 {
+    /* display: block; */
+    display: none;
+}
+
+#radio1:checked~.tab_group [for="radio1"] {
+    background-color: #fff;
+}
+
+#radio2:checked~.tab_group [for="radio2"] {
+    background-color: #fff;
+}
+
+#radio3:checked~.tab_group [for="radio3"] {
+    background-color: #fff;
+}
+
+#radio4:checked~.tab_group [for="radio4"] {
+    background-color: #fff;
+}
+
+#radio5:checked~.tab_group [for="radio5"] {
+    background-color: #fff;
+}
+
+
+/*********************************************/
+
+#radio1:checked~.content_group .content1 {
+    display: block;
+}
+
+#radio2:checked~.content_group .content2 {
+    display: block;
+}
+
+#radio3:checked~.content_group .content3 {
+    display: block;
+}
+
+#radio4:checked~.content_group .content4 {
+    display: block;
+}
+
+#radio5:checked~.content_group .content5 {
+    display: block;
+}
+
+
+/*************************************************/
+
+
+/* #radio2:checked~.content_group .content1 {
+    display: none;
+}
+
+#radio3:checked~.content_group .content1 {
+    display: none;
+}
+
+#radio4:checked~.content_group .content1 {
+    display: none;
+}
+
+#radio5:checked~.content_group .content1 {
+    display: none;
+} */
